@@ -34,4 +34,8 @@ export class ApiService {
     return this.http.delete<Response>(`${this.url}/products/${from.id}`, options)
   }
 
+  postProducto(form:ProductoI):Observable<Response>{
+    return this.http.post<Response>(`${this.url}/products/`, form)
+  }
+
 }
