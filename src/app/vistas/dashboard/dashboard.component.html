@@ -1,1 +1,38 @@
-<p>dashboard works!</p>
+<app-header />
+
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- details card section starts from here -->
+<section class="details-card">
+  <div class="container">
+    <h3>PRODUCTOS</h3>
+    <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let producto of productos" (click)="editarProducto(producto.id)">
+        <div class="card-content">
+          <div class="card-img">
+            <img [src]="producto.images" alt="" />
+            <span
+              ><h4>{{ producto.category.name }}</h4></span
+            >
+          </div>
+          <div class="card-desc">
+            <h3>{{ producto.title }} ${{ producto.price }}</h3>
+            <p>{{ producto.description }}</p>
+            <a href="#" class="btn-card">Read</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- details card section starts from here -->
+
+<app-footer />
