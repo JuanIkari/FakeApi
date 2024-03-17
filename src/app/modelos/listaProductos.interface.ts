@@ -1,7 +1,7 @@
 export interface ListaProductosI {
     id: number;
     title: string;
-    price: number;
+    price: string;
     description: string;
     category: {
         id: number;

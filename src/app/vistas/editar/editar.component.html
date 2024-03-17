@@ -1,1 +1,42 @@
-<p>editar works!</p>
+<app-header />
+
+<form [formGroup]="editarForm" (ngSubmit)="postForm(editarForm.value)" class="editar-form">
+  <div class="form-group">
+    <label for="titulo">Titulo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="titulo"
+      placeholder="Titulo del producto"
+      formControlName="title"
+    />
+  </div>
+  <div class="form-group">
+    <label for="precio">Precio</label>
+    <input
+      type="text"
+      class="form-control"
+      id="precio"
+      placeholder="Precio del producto"
+      formControlName="price"
+    />
+  </div>
+  <div class="form-group">
+    <label for="descripcion">Descripcion</label>
+    <input
+      type="text"
+      class="form-control"
+      id="descripcion"
+      placeholder="Descripcion del producto"
+      formControlName="description"
+    />
+  </div>
+  <br><br>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+  <button type="button" class="btn btn-danger" (click)="eliminar()">Eliminar</button>
+  <button type="button" class="btn btn-dark" (click)="salir()">Salir</button>
+
+
+</form>
+
+<app-footer />
