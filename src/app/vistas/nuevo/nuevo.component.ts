@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { ProductoI } from '../../modelos/producto.interface';
 import { ApiService } from '../../servicios/api/api.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { from } from 'rxjs';
@@ -27,15 +26,14 @@ export class NuevoComponent {
 
   postForm(form: any) {
     if (this.nuevoForm.valid) {
-      const newProduct: ProductoI = {
-        id: '',
+      const newProduct: any = {
         title: form.title,
         price: form.price,
         description: form.description,
         categoryId: form.categoryId,
-        img: ["https://image.noelshack.com/fichiers/2023/07/6/1676741470-image.png"],
+        images: [form.img],
       };
-
+      console.log(newProduct);
       this.api.postProducto(newProduct).subscribe(
         (data: any) => {
           console.log('Producto creado exitosamente:', data);
@@ -49,7 +47,7 @@ export class NuevoComponent {
       );
     } else {
       console.error('El formulario es inválido. Por favor, complete todos los campos.');
-      // Puedes mostrar un mensaje al usuario indicando que el formulario no es válido
+      
     }
   }
 

@@ -4,5 +4,5 @@ export interface ProductoI{
     price: string;
     description: string;
     categoryId: string;
-    img: [string];
+    images: string[];
 }

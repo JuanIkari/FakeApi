@@ -16,7 +16,7 @@ export class EditarComponent {
     private api: ApiService
   ) {}
 
-  datosProducto: ProductoI = { id: "", title: '', price: '0', description: '', categoryId: '', img: [""]};
+  datosProducto: ProductoI = { id: "", title: '', price: '0', description: '', categoryId: '', images: []};
 
   editarForm = new FormGroup({
     id: new FormControl(),
