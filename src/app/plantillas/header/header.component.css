@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.navbar_logo {
+    flex: 1;
+}
+
+.navbar_links {
+    display: flex;
+}
+
+.navbar_links a {
+    margin-right: 20px;
+    color: white; 
+    text-decoration: none;
+}
+
+.navbar_cart {
+    margin-left: 20px;
+}
+
+.logo {
+    max-width: 100px;
+}
