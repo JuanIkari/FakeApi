@@ -13,6 +13,7 @@
 <section class="details-card">
   <div class="container">
     <h3>PRODUCTOS</h3>
+    <hr>
     <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>
     <div class="row">
       <div class="col-md-4" *ngFor="let producto of productos" (click)="editarProducto(producto.id)">

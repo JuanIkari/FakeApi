@@ -87,7 +87,7 @@ img {
     z-index: 1;
     background-color: #4e4b5076;
     padding: 20px;
-    min-height: 400px;
+    min-width: 400px;
 }
 
 table {
@@ -124,4 +124,23 @@ th, td {
 .header-txt {
     flex-basis: 50%;
     text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #111111;
+    margin-bottom: 15px;
+}
+
+.header-txt p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px;
 }
