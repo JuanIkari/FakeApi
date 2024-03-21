@@ -1,16 +1,103 @@
-<nav class="navbar navbar_dark bg-dark">
-    <div class="navbar_logo">
-      <!-- logob -->
-      <img src="ruta/al/logo.png" alt="Logo" class="logo">
+<header class="header">
+  <div class="menu container">
+    <a href="img/logo.png" class="logo">logo</a>
+    <input type="checkbox" id="menu" />
+    <label for="menu">
+      <img src="img/menu.png" class="menu-icono" alt="menu">
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <ul>
+        <li class="submenu">
+          <img src="img/carrito.svg" id="img-carrito" alt="carrito">
+          <div id="carrito">
+            <table id="lista-carrito">
+              <thead>
+                <tr>
+                  <th>Img</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <a href="" id="vaciar-carrito" class="btn-2">Vaciar</a>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="navbar_links">
-      <a href="#">Inicio</a>
-      <a href="#">Productos</a>
-      <a href="#">Contacto</a>
+  </div>
+
+  <div class="header-content">
+    <div class="header-img">
+      <img src="img/tienda.jpg" alt="">
     </div>
-    <div class="navbar_cart">
-      <!-- logo carrito -->
-      <i class="fa fa-shopping-cart"></i>
+    <div class="header-txt">
+      <h1>Ofertas</h1>
+      <p>Descuentos por tiempo limitado</p>
+      <a href="#" class="btn-1">Ver las ofertas</a>
     </div>
-  </nav>
+  </div>
+
+  <section class="ofert container">
+
+    <div class="ofert-1">
+      <div class="ofert-img">
+        <img src="#" alt="">
+      </div>
+      <div class="ofert-txt">
+        <h3>Producto 1</h3>
+        <a href="#" class="btn-2">Ver más</a>
+
+      </div>
+
+    </div>
+
+    <div class="ofert-1">
+      <div class="ofert-img">
+        <img src="#" alt="">
+      </div>
+      <div class="ofert-txt">
+        <h3>Producto 1</h3>
+        <a href="#" class="btn-2">Ver más</a>
+
+      </div>
+
+    </div>
+
+    <div class="ofert-1">
+      <div class="ofert-img">
+        <img src="#" alt="">
+      </div>
+      <div class="ofert-txt">
+        <h3>Producto 1</h3>
+        <a href="#" class="btn-2">Ver más</a>
+
+      </div>
+    </div>
+
+  </section>
   
+  <main class="products container" id="lista-1">
+
+    <h2>Productos</h2>
+
+    <div class="product-content">
+
+      <div class="product">
+        <img src="" alt="">
+      </div>
+
+    </div>
+
+  </main>
+</header>
