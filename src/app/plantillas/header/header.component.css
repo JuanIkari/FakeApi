@@ -140,3 +140,8 @@ th, td {
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
+.bi-cart {
+    font-size: 25px;
+    color: #111111;
+}

@@ -14,7 +14,7 @@
   <div class="container">
     <h3>PRODUCTOS</h3>
     <hr>
-    <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>
+    <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>   <!------ BOION ---------->
     <div class="row">
       <div class="col-md-4" *ngFor="let producto of productos" (click)="editarProducto(producto.id)">
         <div class="card-content">
@@ -36,4 +36,4 @@
 </section>
 <!-- details card section starts from here -->
 
-<app-footer />
+

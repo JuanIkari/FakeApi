@@ -36,6 +36,7 @@ export class NuevoComponent {
       console.log(newProduct);
       this.api.postProducto(newProduct).subscribe(
         (data: any) => {
+          this.router.navigate(['dashboard']);
           console.log('Producto creado exitosamente:', data);
           // Puedes realizar cualquier acción adicional aquí, como navegar a otra página
         },

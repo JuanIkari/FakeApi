@@ -50,7 +50,7 @@ export class EditarComponent {
   eliminar() {
     let datos: any = this.editarForm.value;
     this.api.deleteProducto(datos).subscribe((data) => {
-      console.log(data);
+      this.router.navigate(['dashboard']);
     });
   }
 
