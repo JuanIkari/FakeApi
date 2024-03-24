@@ -1,39 +1,62 @@
 <app-header />
 
-<link
-  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-  rel="stylesheet"
-  id="bootstrap-css"
-/>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<!-- details card section starts from here -->
-<section class="details-card">
-  <div class="container">
-    <h3>PRODUCTOS</h3>
-    <hr>
-    <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>   <!------ BOION ---------->
-    <div class="row">
-      <div class="col-md-4" *ngFor="let producto of productos">
-        <div class="card-content">
-          <div class="card-img">
-            <img [src]="producto.images" alt="" />
-            <span
-              ><h4>{{ producto.category.name }}</h4></span
-            >
-          </div>
-          <div class="card-desc">
-            <h3>{{ producto.title }} ${{ producto.price }}</h3>
-            <p>{{ producto.description }}</p>
-            <button type="button" class="btn-card" (click)="editarProducto(producto.id)">Editar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- details card section starts from here -->
 
+<body>
+    
+    <section class="main-home">
+        <div class="main-text">
+            <h5>winter</h5>
+            <h1>new winter <br> coleccion</h1>
+            <p> hola</p>
+
+            <a href="#" class="main-btn"> shop now <i class='bx bxs-chevron-right'></i></a>
+
+        </div>
+
+        <div class="down-arrow">
+            <a href="#trending" class="down"><i class='bx bxs-chevron-down'></i></a>
+        </div>
+
+    </section>
+
+    <!--trending products section-->
+
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Our Trending <span>Products</span> </h2>
+        </div>
+
+        <div class="products">
+            <div class="row"> <!-- ACA SE DEBEN PINTAR LOS ITEMS DE LA API-->
+                <img src="#" alt="">
+                <div class="product-text">
+                    <h5>Sale</h5>
+                </div>
+                <div class="heart-icon">
+                    <i class='bx bx-heart'></i>
+                </div>
+
+                <div class="ratting">
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bx-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+
+                <div class="price">
+                    <h4>Half running set</h4>
+                    <p>$99 - $129</p>
+                </div>
+            </div> <!-- ACA SE DEBEN PINTAR LOS ITEMS DE LA API-->
+        </div>
+
+    </section>
+
+</body>
 
