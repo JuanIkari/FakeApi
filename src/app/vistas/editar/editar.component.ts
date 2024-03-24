@@ -35,6 +35,7 @@ export class EditarComponent {
           price: data.price,
           description: data.description,
         });
+        console.log(data);
       });
     } else {
       console.error('No se encontró el parámetro "id" en la URL.');
