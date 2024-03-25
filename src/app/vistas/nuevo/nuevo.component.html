@@ -1,5 +1,6 @@
 <div class="container">
   <form [formGroup]="nuevoForm" (ngSubmit)="postForm(nuevoForm.value)">
+    <h1>Agregar Productos</h1>
     <div class="form-group">
       <label for="titulo">Título:</label>
       <input type="text" class="form-control" formControlName="title" />

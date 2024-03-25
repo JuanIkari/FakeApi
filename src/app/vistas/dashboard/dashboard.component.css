@@ -47,7 +47,7 @@ header {
 }
 
 .navmenu a:hover {
-    color: rgb(3, 133, 255);
+    color: #2bb9fa;
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ header {
 
 .nav-icon i:hover {
     transform: scale(1.1);
-    color: rgb(3, 133, 255);
+    color: #2bb9fa;
 }
 
 #menu-icon {
@@ -94,7 +94,7 @@ section {
 }
 
 .main-text h5 {
-    color: #001dc0;
+    color:#2bb9fa;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -187,7 +187,7 @@ section {
     position: absolute;
     top: 15%;
     left: 12%;
-    background: rgb(3, 133, 255);
+    background: #2bb9fa;
     padding: 6px;
     color: #fff;
     font-size: 12px;
@@ -258,7 +258,7 @@ section {
 .btn.btn-primary {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgb(31, 66, 99);
+    background-color: #2bb9fa;
 }
 
 .btn-card:hover {
@@ -281,7 +281,7 @@ body {
 }
 
 .btn-card {
-    background-color: rgb(31, 66, 99);
+    background-color: #2bb9fa;
 
 }
 
@@ -293,7 +293,6 @@ body {
 /* Tipografía */
 body {
     font-family: 'Roboto', sans-serif;
-    /* Fuente principal */
 }
 
 h1,
@@ -303,7 +302,6 @@ h4,
 h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
-    /* Fuente para encabezados */
 }
 
 /* Espaciado y Diseño */
@@ -378,7 +376,7 @@ footer {
   }
   
   .footer-column h4 {
-    color: #ffffff;
+    color:  #fff;
     margin-bottom: 30px;
     font-size: 16px;
     text-align: left;
@@ -401,6 +399,6 @@ footer {
   }
   
   .footer-column ul li a:hover {
-    color: #46a0db; /* Cambia el color al hacer hover */
+    color: #2bb9fa;
   }
   
