@@ -71,7 +71,7 @@ header {
 
 #menu-icon {
     font-size: 35px;
-    color: rgb(3, 133, 255);
+    color: rgb(0, 0, 0);
     z-index: 10001;
     cursor: pointer;
 }
@@ -221,7 +221,7 @@ section {
 }
 
 .card-desc p {
-    color: #747373;
+    color: #414040;
     font-size: 14px;
     font-weight: 400;
     font-size: 1em;
@@ -258,6 +258,7 @@ section {
 .btn.btn-primary {
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgb(31, 66, 99);
 }
 
 .btn-card:hover {
@@ -280,7 +281,7 @@ body {
 }
 
 .btn-card {
-    background-color: rgb(23, 60, 94);
+    background-color: rgb(31, 66, 99);
 
 }
 
@@ -365,51 +366,41 @@ h6 {
 }
 
 
-#footer {
-    background: #15161D;
+footer {
     display: flex;
-    justify-content: space-between;
-}
-
-
-.footer {
-    margin: 30px 0px;
-}
-
-.footer .footer-title {
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 18px;
-    margin: 0px 0px 30px;
-}
-
-.footer-links li+li {
-    margin-top: 15px;
-}
-
-.footer-links li a {
-    color: #B9BABC;
-}
-
-.footer-links li i {
-    margin-right: 15px;
-    color: #001dc0;
-    width: 14px;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0;
+  }
+  
+  .footer-column {
     text-align: center;
-}
-
-.footer-links li a:hover {
-    color: #001dc0;
-}
-
-
-.footer-payments li {
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.footer-payments li a {
-    color: #15161D;
-    font-size: 36px;
-    display: block;
-}
+  }
+  
+  .footer-column h4 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #46a0db; /* Cambia el color al hacer hover */
+  }
+  

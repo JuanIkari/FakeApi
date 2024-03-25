@@ -1,25 +1,25 @@
-
 .container-formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; 
-    background: linear-gradient(#bdc9ec, #4098c0); 
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#bdc9ec, #4098c0);
+  padding: 20px;
+}
 
-  .container-formulario .form-group {
-    margin-bottom: 20px;
-  }
-  
- 
-  .container-formulario button {
-    margin-right: 10px; 
-  }
-  
+.container-formulario form {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
 
-  .container-formulario form {
-    margin-bottom: 0; 
-  }
-  
-  
+.container-formulario .form-group {
+  margin-bottom: 20px;
+}
+
+.container-formulario button {
+  margin-right: 10px;
+}
