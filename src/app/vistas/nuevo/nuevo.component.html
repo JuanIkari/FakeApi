@@ -10,27 +10,18 @@
     </div>
     <div class="form-group">
       <label for="descripcion">Descripción:</label>
-      <textarea
-        class="form-control"
-        formControlName="description"
-      ></textarea>
+      <textarea class="form-control" formControlName="description"></textarea>
     </div>
     <div class="form-group">
       <label for="categoriaId">Categoría ID:</label>
-      <input
-        type="text"
-        class="form-control"
-        formControlName="categoryId"
-      />
+      <input type="number" class="form-control" formControlName="categoryId" />
     </div>
     <div class="form-group">
       <label for="imagen">Imagen:</label>
-      <input type="text" class="form-control" formControlName="images" multiple/>
+      <input type="text" class="form-control" formControlName="images" />
     </div>
-    
+
     <button type="submit" class="btn btn-primary">Guardar</button>
     <button type="button" class="btn btn-dark" (click)="salir()">Salir</button>
   </form>
 </div>
-
-

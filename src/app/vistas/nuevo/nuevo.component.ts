@@ -15,7 +15,7 @@ export class NuevoComponent {
     price: new FormControl('', Validators.required),
     description: new FormControl('', Validators.required),
     categoryId: new FormControl('', Validators.required),
-    images: new FormControl(([]), Validators.required),
+    images: new FormControl('', Validators.required),
   });
 
   constructor(
