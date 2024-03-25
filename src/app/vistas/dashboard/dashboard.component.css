@@ -1,5 +1,3 @@
-/* section */
-
 /* card details start  */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
 
@@ -13,6 +11,7 @@
 }
 
 header {
+    background-color: #ffffff;
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,12 +42,12 @@ header {
     text-decoration: none;
 }
 
-::marker{
+::marker {
     color: transparent;
 }
 
 .navmenu a:hover {
-    color: crimson;
+    color: rgb(3, 133, 255);
     text-decoration: none;
 }
 
@@ -64,14 +63,15 @@ header {
     font-weight: 400;
     transition: all .42s ease;
 }
+
 .nav-icon i:hover {
     transform: scale(1.1);
-    color: crimson;
+    color: rgb(3, 133, 255);
 }
 
 #menu-icon {
     font-size: 35px;
-    color: #2c2c2c;
+    color: rgb(3, 133, 255);
     z-index: 10001;
     cursor: pointer;
 }
@@ -85,16 +85,16 @@ section {
 .main-home {
     width: 100%;
     height: 100vh;
-    background-image: url(https://img.freepik.com/vector-gratis/banner-onda-azul-que-fluye-moderno-sobre-fondo-blanco_1035-18546.jpg?w=1800&t=st=1711315751~exp=1711316351~hmac=ae46f89d238dc204e771d639bb90001896410ceb125a75429672cfdba5381d26); 
+    background-image: url(https://img.freepik.com/vector-gratis/banner-onda-azul-que-fluye-moderno-sobre-fondo-blanco_1035-18546.jpg?w=1800&t=st=1711315751~exp=1711316351~hmac=ae46f89d238dc204e771d639bb90001896410ceb125a75429672cfdba5381d26);
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
 
 .main-text h5 {
-    color: crimson;
+    color: #001dc0;
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -138,28 +138,6 @@ section {
     vertical-align: middle;
 }
 
-.down-arrow {
-    position: absolute;
-    top: 85%;
-    right: 11%;
-}
-
-.down i{
-    background-color: #fff;
-    font-size: 30px;
-    color: #2c2c2c;
-    border: 2px solid #2c2c2c;
-    border-radius: 50px;
-    padding: 12px 12px;
-}
-
-.down i:hover {
-    background-color: #2c2c2c;
-    color: #fff;
-    transition: all .42s ease;
-}
-
-/* el stiki */
 header.sticky {
     background-color: #fff;
     padding: 20px 10%;
@@ -167,100 +145,13 @@ header.sticky {
 }
 
 
-
-
-
-
-
-/* el stiki */
-
-
-
-
-
-/* trending section */
-
-.center-text h2 {
-    color: #111;
-    font-size: 28px;
-    text-transform: capitalize;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.center-text span{
-    color: crimson;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
-    gap: 2rem;
-}
-
-.row {
-    position: relative;
-    transition: all .40s;
-}
-
-.row img {
-    width: 100%;
-    height: auto;
-    transition: all .40s;
-}
-
-.row img:hover {
-    transform: scale(0.9);
-}
-
-.product-text h5 { /* aca saldria lo de la categoria no se ajajajja */
-    position: absolute;
-    top: 13px;
-    left: 13px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #1ABC9C;
-    padding: 3px 10px;
-    border-radius: 2px;
-}
-
-.heart-icon {
-    position: absolute;
-    right: 0;
-    font-size: 20px;
-}
-
-.heart-icon:hover {
-    color: crimson;
-}
-
-.ratting i {
-    color: orange;
-    font-size: 18px;
-}
-
-.price h4 {
-    color: #111;
-    font-size: 16px;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-
-.price p {
-    color: #151515;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-
-
-
-
-
-
 /* seccction */
+
+.container h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 section {
     padding: 100px 0;
@@ -274,6 +165,12 @@ section {
     background: #ffffff;
     border: 4px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    max-height: 600px;
+    /* Altura máxima para el contenido de la tarjeta */
+    overflow: hidden;
+    /* Para ocultar el contenido que excede la altura máxima */
+    margin-bottom: 20px;
+    /* Separación vertical entre tarjetas */
 }
 
 .card-img {
@@ -293,7 +190,7 @@ section {
     position: absolute;
     top: 15%;
     left: 12%;
-    background: #1ABC9C;
+    background: rgb(3, 133, 255);
     padding: 6px;
     color: #fff;
     font-size: 12px;
@@ -360,8 +257,13 @@ section {
     color: #fff;
 }
 
+.btn.btn-primary {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .btn-card:hover {
-    background: orange;
+    background: rgb(0, 59, 114);
 }
 
 a.btn-card {
@@ -371,24 +273,22 @@ a.btn-card {
 
 /* hasta aca va la seccion de carta */
 
-/* estilos prueba */
 
-/* Color Scheme */
+
+
 body {
     background-color: #f5f5f5;
-    /* Fondo blanco */
     color: #333;
-    /* Texto negro */
 }
 
 .btn-card {
-    background-color: #ff7f50;
-    /* Color de acento naranja */
+    background-color: rgb(23, 60, 94);
+
 }
 
 .btn-card:hover {
-    background-color: #ffa07a;
-    /* Cambio de color al pasar el ratón */
+    background-color: #0e121b;
+
 }
 
 /* Tipografía */
@@ -464,4 +364,54 @@ h6 {
 
 .card-img:hover::after {
     opacity: 1;
+}
+
+
+#footer {
+    background: #15161D;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    margin: 30px 0px;
+}
+
+.footer .footer-title {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0px 0px 30px;
+}
+
+.footer-links li+li {
+    margin-top: 15px;
+}
+
+.footer-links li a {
+    color: #B9BABC;
+}
+
+.footer-links li i {
+    margin-right: 15px;
+    color: #001dc0;
+    width: 14px;
+    text-align: center;
+}
+
+.footer-links li a:hover {
+    color: #001dc0;
+}
+
+
+.footer-payments li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-payments li a {
+    color: #15161D;
+    font-size: 36px;
+    display: block;
 }

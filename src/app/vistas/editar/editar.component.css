@@ -1,0 +1,25 @@
+
+.container-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: linear-gradient(#bdc9ec, #1f2336); 
+  }
+  
+  /* Estilos para los elementos del formulario dentro del contenedor */
+  .container-formulario .form-group {
+    margin-bottom: 20px; /* Espaciado entre campos */
+  }
+  
+  /* Estilos para los botones */
+  .container-formulario button {
+    margin-right: 10px; /* Espaciado entre botones */
+  }
+  
+  /* Estilos específicos para el formulario */
+  .container-formulario form {
+    margin-bottom: 0; /* Eliminar espacio inferior del formulario */
+  }
+  
+  

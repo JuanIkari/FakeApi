@@ -16,6 +16,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Dashboard</title>
   </head>
+  
   <body>
     <header>
       <a href="#" class="logo"><img src="/src/app/img/api.jpg" alt="" /></a>
@@ -24,8 +25,8 @@
         <li><a href="#">inicio</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">productos</a></li>
-        <li><a href="#">page</a></li>
-        <li><a href="#">docs</a></li>
+        <li><a href="#">novedades</a></li>
+        
       </ul>
 
       <div class="nav-icon">
@@ -39,31 +40,26 @@
 
     <section class="main-home">
       <div class="main-text">
-        <h5>winter</h5>
+        <h5>Hot Sale</h5>
         <h1>
-          new winter <br />
-          coleccion
+          Nuevos <br />
+          productos
         </h1>
-        <p>hola</p>
+        <p>y más</p>
 
         <a href="#" class="main-btn">
-          shop now <i class="bx bxs-chevron-right"></i
+          ver <i class="bx bxs-chevron-right"></i
         ></a>
       </div>
 
-      <div class="down-arrow">
-        <a href="#trending" class="down"><i class="bx bxs-chevron-down"></i></a>
-      </div>
     </section>
-
-    <!--trending products section-->
 
     <section class="details-card">
       <div class="container">
         <h3>PRODUCTOS</h3>
         <hr>
-        <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>
-        <!------ BOION ---------->
+        
+        <!------ BOTON ---------->
         <div class="row">
           <div class="col-md-4" *ngFor="let producto of productos">
             <div class="card-content">
@@ -81,7 +77,74 @@
             </div>
           </div>
         </div>
+        <button type="button" class="btn btn-primary" (click)="nuevoProducto()">Nuevo Producto</button>
       </div>
     </section>
   </body>
+
+  
+    <footer id="footer">
+      
+      <div class="section">
+        
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-md-3 col-xs-6">
+              <div class="footer">
+                <h3 class="footer-title">Sobre nosotros</h3>
+                <p>
+                </p>
+                <ul class="footer-links">
+                  <li><a href="#"><i class="fa fa-map-marker"></i> UTP Pereira</a></li>
+                  <li><a href="#"><i class="fa fa-phone"></i>+57 3130000000</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-3 col-xs-6">
+              <div class="footer">
+                <h3 class="footer-title">Categorias</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Electronics</a></li>
+                  <li><a href="#">Laptops</a></li>
+                  <li><a href="#">Smartphones</a></li>
+                  <li><a href="#">Cameras</a></li>
+                  <li><a href="#">Accessories</a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="clearfix visible-xs"></div>
+  
+            <div class="col-md-3 col-xs-6">
+              <div class="footer">
+                <h3 class="footer-title">Informacion</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Contactenos</a></li>
+                  <li><a href="#">Politicas de privacidad</a></li>
+                  <li><a href="#">Ordenes y devoluciones</a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-3 col-xs-6">
+              <div class="footer">
+                <h3 class="footer-title">Servicios</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Cuenta</a></li>
+                  <li><a href="#">Ver Carrito</a></li>
+                  <li><a href="#">Lista de deseos</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </footer>
+  
+  
 </html>
