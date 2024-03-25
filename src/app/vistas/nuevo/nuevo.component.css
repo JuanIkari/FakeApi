@@ -5,6 +5,7 @@
   min-height: 100vh;
   background-color: #092a68;
   padding: 20px;
+  max-width: 100%;
 }
 
 .container form {
